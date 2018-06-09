@@ -57,6 +57,9 @@ Note: It is copy of value of arg that is passed into func. What occurs inside th
 * Syntax:- 
 	char *argv[];
 	
+## Multiple indirection:- 
+* lkadslkasd
+* dskakdas
 
 
 
