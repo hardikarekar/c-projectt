@@ -10,7 +10,8 @@
 		type member_name;
 	}structure_variables;
 
-* 	struct "addr"-->structure type
+	
+	struct "addr"-->structure type
 	{
 		char name[30];      //30bytes
 		char street[40];   //40bytes
@@ -35,7 +36,7 @@
 * single assignment statement - assigns info contained in one structure to another structure of same type.
 * no need to assign value of each member seperately.
 
-* 	#include <stdio.h>
+ 	#include <stdio.h>
 	int main(void)
 	{
 		struct
