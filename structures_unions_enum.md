@@ -5,20 +5,21 @@
 * declaration terminated by ";" (structure declaration is a statement).
 
 * General form:-
+##
 	struct struct type_name
 	{
 		type member_name;
 	}structure_variables;
-
+##
 	
-struct "addr"-->structure type
-{
-	char name[30];      //30bytes
-	char street[40];   //40bytes
-	char city [20];   //20bytes
-	char state [3];  //3bytes
-	unsigned long int zip;
-}"addr_info, binfo, cinfo"; --> variables
+	struct "addr"-->structure type
+	{
+		char name[30];      //30bytes
+		char street[40];   //40bytes
+		char city [20];   //20bytes
+		char state [3];  //3bytes
+		unsigned long int zip;
+	}"addr_info, binfo, cinfo"; --> variables
 	
 	
 
@@ -36,6 +37,7 @@ struct "addr"-->structure type
 * single assignment statement - assigns info contained in one structure to another structure of same type.
 * no need to assign value of each member seperately.
 
+## 
  	#include <stdio.h>
 	int main(void)
 	{
