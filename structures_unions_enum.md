@@ -63,6 +63,55 @@
 	printf("%lu", addr_info[2].zip);
 	
 	
+## Passing structures to functions
+
+## Passing structure members to functions
+* passing member of structure to function --> passing value of that member to function (actual).
+
+##
+	struct fred
+	{
+	char x;        func(mike.x);		    //passes character value of x
+	int y;         func2(mike.y);		   //passes integer value of y
+	float z;       func3(mike.z);		  //passes float value of z
+	char s[10];    func4(mike.s);		 //passes address of string s
+	}mike;         func(mike.s[2]);		//passes character value of s[2]
+	
+##	
+	
+	To pass the address of an individual structure member:- put "&" before structure name.
+	
+	func(&mike.x);		    //passes address of character x//
+	func2(&mike.y);		   //passes address of integer y//
+	func3(&mike.z);		  //passes address of float z
+	func4(&mike.s);		 //passes address of string s
+        func(&mike.s[2]);	//passes address of character s[2]
+
+## Passing entire structure to functions
+* Entire structure is passed using call by value method.
+* Using structure as a parameter:- type of argument must match the type of parameter. 
+
+##
+	#include<stdio.h>
+	struct struct_type
+	{
+	int a,b;
+	char ch;
+	};
+
+	void f1(struct struct_type parm);
+	int main(void)
+	{
+		struct struct_type arg;
+		arg.a=100;
+		f1(arg);
+		return 0;
+	}
+	void f1(struct struct_type parm)
+	{
+		printf("%d", parm.a);
+	}
+	
 	
 	
 	
