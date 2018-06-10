@@ -65,7 +65,7 @@
 	
 ## Passing structures to functions
 
-## Passing structure members to functions
+### Passing structure members to functions
 * passing member of structure to function --> passing value of that member to function (actual).
 
 ##
@@ -87,7 +87,7 @@
 	func4(&mike.s);		 //passes address of string s
         func(&mike.s[2]);	//passes address of character s[2]
 
-## Passing entire structure to functions
+### Passing entire structure to functions
 * Entire structure is passed using call by value method.
 * Using structure as a parameter:- type of argument must match the type of parameter. 
 
@@ -113,7 +113,54 @@
 	}
 	
 	
+## Bit fields
+* A structure member that defines how long(in bits), the field is to be.
+
+## 
+	General form:	
 	
+	struct struct_type_name
+	{
+		type name:length;
+		type name2:length2;
+		.
+		.
+		type nameN:lengthN;
+	}variable_list;
+	
+
+## Structure pointers
+
+### Declaring Structure pointers
+##
+	General form:-
+		struct addr *addr_pointer;
+		
+### Using structure pointers
+
+* __Pass a pointer to a structure__
+##
+
+	struct bal
+	{
+		float balance;
+		char name[30];
+	}person;
+	struct bal *p;	.......	// Declares a structure pointer
+	
+* __To find the address of structure__
+  Place the & operator before structure name.
+ ##
+ 
+ 	p = &person;		//places the address of structure person into pointer p.	
+	
+* __To access members of structure using pointer__
+  Use the -> operator.
+  -> used in place of dot operator.
+##
+	p->balance
+
+
 	
 	
 	
