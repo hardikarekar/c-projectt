@@ -1,10 +1,10 @@
 ## Structures
-* grouping of variables under one name.
-* members make up the structure.
+* Grouping of variables under one name.
+* Members make up the structure.
 * "struct" tells compiler --> structure is declared.
-* declaration terminated by ";" (structure declaration is a statement).
+* Declaration terminated by ";" (structure declaration is a statement).
 
-* General form:-
+* __General form:-__
 ##
 	struct struct type_name
 	{
@@ -25,17 +25,17 @@
 
 
 ### Accessing structure members
-* General form to access:-
+* __To access:-__
 	structure_name.member_name
 	
 * addr_info.zip = 12345;
 
-* To print:-
+* __To print:-__
 	printf("%lu", addr_info.zip);
 	
 ### Structure assignments
-* single assignment statement - assigns info contained in one structure to another structure of same type.
-* no need to assign value of each member seperately.
+* Single assignment statement - assigns info contained in one structure to another structure of same type.
+* No need to assign value of each member seperately.
 
 ## 
  	#include <stdio.h>
@@ -52,7 +52,16 @@
 		return 0;
 	}
 	
+## Arrays of structures
+* __To define:-__
+	1. Define a structure.
+	2. Declare an array variable of that type.
 
+* struct addr addr_info[100];   //100 sets of variables defined in structure "addr".
+
+* __To print:-__
+	printf("%lu", addr_info[2].zip);
+	
 	
 	
 	
