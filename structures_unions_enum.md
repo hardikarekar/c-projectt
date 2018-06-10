@@ -159,6 +159,9 @@
   -> used in place of dot operator.
 ##
 	p->balance
+	
+## Arrays and structures within structures
+
 
 
 	
