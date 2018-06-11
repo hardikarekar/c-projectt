@@ -98,10 +98,9 @@ Application:-
 
 
 
-
-
-
-
+## const and volatile qualifiers
+* const int a = 10;
+* const does not change 
 
 
 
