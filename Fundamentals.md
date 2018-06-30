@@ -20,10 +20,10 @@
     }
 
 
-* <iostream> supports C++ style I/O operations.
-* using namespace std;
-* using - informs the compiler to use the std namespace.
-* namespace - creates a declarative region in which various program elements can be placed.
-* std - simplifies access to the standard library when used.
+* __<iostream>__ - supports C++ style I/O operations.
+* __using namespace std;__
+* __using__ - informs the compiler to use the std namespace.
+* __namespace__ - creates a declarative region in which various program elements can be placed.
+* __std__ - simplifies access to the standard library when used.
   
     
